@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <style>
+   
+   .hero {
+     height: 100vh;
+     background: url('back.png') no-repeat center center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .hero h1 {
+     color: rgb(173, 41, 145);
+     font-size: 4rem;
+   }
+.hero {
+ background: url('10554240.jpg'); 
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ color: rgb(144, 201, 245);
+}
+
+.hero h1 {
+ font-size: 3rem;
+}
+.hero p {
+  color: rgb(173, 41, 145);
+ font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+ 
+ .hero h1 {
+   font-size: 2.5rem;
+ }
+ 
+ .hero p {
+   font-size: 1.25rem;
+ }
+.navbar-brand {
+   font-size: 1.5rem;
+ }
+
+ .btn-lg {
+   padding: 0.75rem 1.5rem;
+   font-size: 1.25rem;
+ }
+}
+@media (max-width: 768px) {
+ 
+ .navbar-nav {
+   text-align: center;
+ }
+
+ .hero {
+   height: 70vh;
+ }
+
+ .hero h1 {
+   font-size: 2rem;
+ }
+.hero p {
+   font-size: 1rem;
+ }
+
+ .btn-lg {
+   font-size: 1rem;
+   padding: 0.5rem 1.25rem;
+ }
+ 
+ .navbar-toggler {
+   margin-right: 0;
+ }
+@media (max-width: 576px) {
+ 
+ .navbar-brand {
+   font-size: 1.25rem;
+ }
+
+ .hero h1 {
+   font-size: 1.75rem;
+ }
+
+ .hero p {
+   font-size: 0.875rem;
+ }
+.btn-lg {
+   font-size: 0.875rem;
+   padding: 0.5rem 1rem;
+ }
+}
+
+</style>
+<style>
+        .card-img-top{
+            height:150px;
+            object-fit: cover;
+        }
+        .card-body{
+            background-color: azure;
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info"">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#services">service </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#appointment">appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section class="hero">
+        <div class="text-center">
+          <h1>Welcome to Our Hospital</h1>
+          <p class="lead text-blue">Caring for You Always</p>
+          <a href="#services" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+      </section>
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="container mt-5">
+        <div class="row">
+<div class="col-md-4">
+     <div class="card">
+       <img src="neuro.jpg" class="card-img-top" alt="service 1">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Neurologist</h5>
+            <p class="card-text">Your partner in brain health!</p>
+            <a class="btn btn-danger" href="#">Learn More</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+     <div class="card">
+       <img src="kidney.png" class="card-img-top" alt="service 1">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Neprologist</h5>
+            <p class="card-text">Kidney Care, Our Expertise!</p>
+            <a class="btn btn-danger" href="#">Learn More</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+     <div class="card">
+       <img src="cardio.png" class="card-img-top" alt="service 1">
+        <div class="card-body">
+            <h5 class="card-title text-primary">Cardiologist</h5>
+            <p class="card-text">Do your part. Care for your heart!</p>
+            <a class="btn btn-danger" href="#">Learn More</a>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+          </div>
+        </section>
+      <section id="appointment" class="py-5 bg-light">
+        <div class="container">
+          <div class="container mt-5">
+
+          <h2><center>Book an Appointment</center></h2>
+          <p class="lead"><center>Fill out the form to review the schedule</center></p>
+          </div>
+        <form id="appoinmetForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Fullname</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">Please enter your name</div>
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your mail" required>
+            <div class="invalid-feedback">Please enter valid email</div>
+            </div>
+            <div class="mb-3">
+            <label for="date" class="form-label">Prefered date</label>
+            <input type="date" class="form-control" id="date"  required>
+            <div class="invalid-feedback">Please select the date</div>
+            </div>
+           <center><button type="submit" class="btn btn-primary w-30">Submit</button></center> 
+          </div> 
+          </form>
+        </section>
+    <footer class="bg-info text-white text-center py-3">
+      <p>2024 hospital name.all rights reserved</p>
+      </footer>
+</body>
+</html>
